@@ -15,6 +15,20 @@
 - Created redux Store with userSlice
 - Implemneted Sign Out
 - Update Profile
+- Bug Fix: Sign up user displayname and profile picture update
+- Bug Fix: if the user is not loggedin redirect user to login and vice versa
+- unsubscribed to the auth state change callback
+- Added all hardcorder url to the constant file
+- Register TMDB API & create an app & get access token
+- Get Data from TMDB now playing movie list API
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update store with movies Data
+- Planning for Maicontainer and secondarycontainer
+- Fetch data for Trailer video
+- Update Store with Trailer video data
+- Embeded the youtube video and make it autoplay and mute
+- Added tailwind classes
 
 # Feature
 
