@@ -6,7 +6,6 @@ import { trailerVideo } from "../utils/movieSlice";
 const useFetchVideoById = (id) => {
   const dispatch = useDispatch();
   const fetchVideoById = async () => {
-    console.log("id", id);
     const data = await fetch(
       "https://api.themoviedb.org/3/movie/" + id.movieId.toString() + "/videos",
       API_OPTIONS

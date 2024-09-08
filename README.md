@@ -33,6 +33,10 @@
 - Build Movie List
 - Build movie card
 - TMDB Image CDN URL
+- GPT Search Page
+- Gpt Search Bar
+- Multi-language feature in our App
+- Integrate GPt APIs
 
 # Feature
 
