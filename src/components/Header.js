@@ -52,15 +52,15 @@ const Header = () => {
     dispatch(toggleGptSearchView());
   };
   return (
-    <div className="bg-black min-h-full max-w-full flex flex-wrap align-middle justify-between">
-      <div className="ml-5 ">
+    <div className="bg-black min-h-full max-w-full flex flex-wrap align-middle justify-between md:flex-row md:justify-between">
+      <div className="ml-5 md:mx-0">
         <img className=" h-20 w-40" src={APP_LOGO} alt="logo" />
       </div>
       {loginInInfo && (
         <div className="mr-2 flex">
           {GptSearch && (
             <select
-              className="m-5 bg-black text-white outline"
+              className=" m-5 bg-black text-white outline"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGE.map((lang) => (
@@ -71,7 +71,7 @@ const Header = () => {
             </select>
           )}
           <button
-            className="px-4 m-5 text-white bg-purple-600 rounded-lg"
+            className=" px-4 m-5 text-white bg-purple-600 rounded-lg"
             onClick={handleGptSearchClick}
           >
             {GptSearch ? "Homepage" : "GPT Search"}
@@ -81,7 +81,7 @@ const Header = () => {
             src={loginInInfo.photoURL}
             alt="user-icon"
           />
-          <button className="m-5 font-bold text-white" onClick={handleSignout}>
+          <button className=" m-5 font-bold text-white" onClick={handleSignout}>
             Hello, {loginInInfo.displayName} &nbsp; (Sign Out)
           </button>
         </div>
