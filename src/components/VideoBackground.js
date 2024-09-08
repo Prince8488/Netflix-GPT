@@ -6,7 +6,7 @@ const VideoBackground = (id) => {
   const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
   if (!trailerVideo) return;
   return (
-    <div className="absolute">
+    <div className="absolute w-screen h-screen aspect-video">
       <iframe
         className="w-screen h-screen aspect-video"
         src={
@@ -16,8 +16,8 @@ const VideoBackground = (id) => {
         }
         title="YouTube video player"
         frameBorder="0"
+        allowFullScreen
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted"
-        referrerPolicy="strict-origin-when-cross-origin"
       ></iframe>
     </div>
   );

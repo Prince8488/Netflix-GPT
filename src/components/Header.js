@@ -42,7 +42,7 @@ const Header = () => {
       });
   };
   return (
-    <div className="bg-black min-h-full max-w-full bg-opacity-50 flex flex-wrap align-middle justify-between">
+    <div className="bg-black min-h-full max-w-full flex flex-wrap align-middle justify-between">
       <div className="ml-5 ">
         <img className=" h-20 w-40" src={APP_LOGO} alt="logo" />
       </div>
